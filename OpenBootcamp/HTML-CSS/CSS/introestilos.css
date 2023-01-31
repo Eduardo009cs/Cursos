@@ -1,0 +1,42 @@
+.colores{
+    color: red;
+}
+.color-hexadecimal{
+    color:#525175;
+}
+.color-rgb{
+    color:rgb(15, 65, 100)
+}
+.color-rgba{
+    color:rgba(150, 165, 50,0.5)
+}
+.fondo{
+    /*background-color: darkslateblue;*/
+    background-image: url("https://imgs.search.brave.com/Vg-L55ErubxhRN_nKdet16RGhcVf_TeLk40By3A_1-g/rs:fit:759:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5G/RW9YZExPNlV0TzB4/WDVRb3ZTaWR3SGFF/byZwaWQ9QXBp");
+    background-position: center center ;
+}
+.fondo-interno{
+    background-image: url("fondo.webp");
+}
+
+/*Tamaños*/
+.ancho{
+    background-color: aqua;
+    width: 100px;
+}
+.alto{
+    background-color: blueviolet;
+    height: 100px;
+    
+}
+.tarjeta{
+    border-style: solid;
+    border-color: rgb(150, 150, 150);
+    border-width: 1px;
+    /*border-top: 1px;*/
+    /*padding: 10px 20px 30px 40px;*/
+    padding: 10px 20px;
+    margin: 10px 20px;
+    /*margin: 10px 20px 30px 40px;*/
+
+}
