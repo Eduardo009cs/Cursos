@@ -1,0 +1,45 @@
+div {
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 5px;
+}
+
+/*Posicionamiento relativo - se posiciona en relación al posicionamiento original*/
+/*Deja un hueco donde es su posicion orginal, los demas elementos no lo ocuparan */
+.relative{
+    position: relative;
+    left: 80px;
+    
+    margin-left: 10px;
+}
+/*Siempre se va a mantener en una posición independientemente de donde este en la pagina*/
+.fixed {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: blue;
+    z-index: 10;/*Como se posiciona ante los demás por encima o por debajo*/
+}
+/*Se va a posicionar en función de su padre relativo, es parecido
+a fixed, solo que este no se mueve conforme a la pagina*/
+.absolute{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: aliceblue;
+}
+
+.relative.contenedor{
+    width: 300px;
+    height: 400px;
+    background-color: red;
+}
+/* Funcionameinto "pegajoso", siempre se mantiene en la pantalla, como el fixed
+Solo que este cuando regresa a su posicion inical, se mantiene en esa posición*/
+.sticky{
+    position: sticky;
+    background-color: darksalmon;
+    color:white;
+    top: 0px;
+    z-index: 2;
+}
