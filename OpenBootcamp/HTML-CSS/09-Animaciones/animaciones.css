@@ -1,0 +1,57 @@
+.padre {
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
+
+.hijo {
+    width: 50%;
+    height: 50%;
+    background-color: beige;
+    animation: traslacion 4s ease-in infinite forwards alternate;
+    
+/*Que quiero mover 
+- en cuanto tiempo
+- como quiero que se mueva 
+- delay*/
+    /* transition: transform 1s ease-in 2s; */
+}
+
+.padre:hover .hijo {
+    /* transform: translateX(100%);
+    background-color: blueviolet; */
+    /*Nombre de la animacion
+    Duracion
+    Tipo
+    Cuantas veces
+    Mantiene el estado final de la animacion
+    
+    animation: traslacion 4s ease-in infinite forwards alternate; 
+     */
+    animation-play-state: paused;
+    
+}
+
+
+@keyframes traslacion  {
+    0%{
+        background-color: beige;
+        transform: translateX(0%) translateY(0%);
+    }
+    25% {
+        /* background-color: rgb(247, 247, 149); */
+        transform: translateX(100%) translateY(0%);
+    }
+    50% {
+        /* background-color: rgb(228, 175, 78); */
+        transform: translateX(100%) translateY(100%);
+    }
+    75% {
+        /* background-color: rgb(230, 164, 83); */
+        transform: translateY(0%) translateY(100%);
+    }
+    100%{
+        background-color: darkorange;
+        transform: translateX(0%) translateY(0%);
+    }
+}
